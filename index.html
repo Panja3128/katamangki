@@ -1,0 +1,3917 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KATAMANGKI.COM - Sistem Motivasi & Kata Penyemangat</title>
+    <meta name="description" content="Platform motivasi dengan kumpulan kata-kata penyemangat untuk membangkitkan semangat hidup Anda">
+    <meta name="keywords" content="motivasi, kata penyemangat, inspirasi, semangat hidup, KATAMANGKI">
+    <meta name="author" content="KATAMANGKI.COM">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='black'/><rect x='10' y='10' width='80' height='80' fill='none' stroke='white' stroke-width='2'/><text x='50' y='60' font-family='Arial' font-size='24' fill='white' text-anchor='middle'>MΛNGKİ</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='black'/><rect x='10' y='10' width='80' height='80' fill='none' stroke='white' stroke-width='2'/><text x='50' y='60' font-family='Arial' font-size='24' fill='white' text-anchor='middle'>MΛNGKİ</text></svg>">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="KATAMANGKI.COM - Sistem Motivasi & Kata Penyemangat">
+    <meta property="og:description" content="Platform motivasi dengan kumpulan kata-kata penyemangat untuk membangkitkan semangat hidup Anda">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://katamangki.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --primary: #f39c12; /* Oranye cerah untuk energi */
+            --secondary: #2c3e50; /* Navy untuk profesional */
+            --accent: #e74c3c; /* Merah untuk semangat */
+            --light: #f8f9fa; /* Putih bersih */
+            --dark: #34495e; /* Abu gelap */
+            --success: #27ae60; /* Hijau untuk positif */
+            --purple: #8e44ad; /* Ungu untuk spiritual */
+            --blue: #3498db; /* Biru untuk kepercayaan */
+            --teal: #1abc9c; /* Teal untuk keseimbangan */
+            --font-primary: 'Poppins', sans-serif;
+            --font-secondary: 'Montserrat', sans-serif;
+            --font-tertiary: 'Roboto', sans-serif;
+        }
+        /* Dark Mode Variables */
+        [data-theme="dark"] {
+            --light: #1a1a1a;
+            --dark: #f5f5f5;
+            --secondary: #ecf0f1;
+            --primary: #f1c40f;
+        }
+        /* Global Styles */
+        body {
+            font-family: var(--font-primary);
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        [data-theme="dark"] body {
+            background-color: #121212;
+            color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 20px;
+            color: var(--secondary);
+            font-weight: 600;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: var(--accent);
+        }
+        /* Logo Styles */
+        .logo-box {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            border: 2px solid white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-right: 10px;
+            font-weight: bold;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            letter-spacing: 1px;
+        }
+        /* Header Styles */
+        header {
+            background-color: var(--secondary);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 25px;
+        }
+        nav ul li a {
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s;
+        }
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        /* Theme Toggle Button */
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-left: 15px;
+            transition: transform 0.3s;
+        }
+        .theme-toggle:hover {
+            transform: rotate(30deg);
+        }
+        /* Font Size Controls */
+        .font-controls {
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+        }
+        .font-btn {
+            background: none;
+            border: 1px solid white;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin: 0 3px;
+        }
+        /* Welcome Message */
+        .welcome-message {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--primary);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            z-index: 1001;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            animation: slideDown 0.5s ease;
+        }
+        .welcome-close {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        /* Hero Section - Motivasi */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            color: white;
+            animation: fadeInUp 1s ease;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease 0.2s;
+            animation-fill-mode: both;
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            animation: fadeInUp 1s ease 0.4s;
+            animation-fill-mode: both;
+        }
+        .btn:hover {
+            background-color: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid white;
+        }
+        .btn-secondary:hover {
+            background-color: white;
+            color: var(--secondary);
+        }
+        /* Main Content */
+        main {
+            padding: 80px 0;
+        }
+        section {
+            margin-bottom: 80px;
+        }
+        /* Feature Cards */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .feature-card {
+            background-color: var(--light);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        /* Create Quote Section */
+        .create-quote-section {
+            background-color: var(--light);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .create-tabs {
+            display: flex;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+        }
+        .create-tab {
+            padding: 10px 20px;
+            background: none;
+            border: none;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--dark);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.3s;
+        }
+        .create-tab.active {
+            color: var(--primary);
+        }
+        .create-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary);
+        }
+        .create-tab-content {
+            display: none;
+        }
+        .create-tab-content.active {
+            display: block;
+        }
+        .create-form {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: white;
+            font-family: var(--font-primary);
+        }
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        .ai-generator {
+            background-color: rgba(52, 152, 219, 0.1);
+            border: 1px solid var(--blue);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .ai-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .ai-tag {
+            background-color: rgba(52, 152, 219, 0.2);
+            color: var(--blue);
+            border: 1px solid var(--blue);
+            padding: 5px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+        .ai-tag:hover, .ai-tag.active {
+            background-color: var(--blue);
+            color: white;
+        }
+        .ai-result {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            min-height: 100px;
+            position: relative;
+        }
+        .ai-result.loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ai-result-text {
+            font-style: italic;
+            color: var(--secondary);
+            line-height: 1.6;
+        }
+        .ai-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        /* Search Section */
+        .search-section {
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 50px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+        .search-container {
+            display: flex;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .search-input {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 30px 0 0 30px;
+            font-size: 1rem;
+            outline: none;
+            background-color: white;
+        }
+        .search-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 0 30px 30px 0;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        .search-btn:hover {
+            background-color: var(--accent);
+        }
+        .search-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .filter-tag {
+            background-color: rgba(243, 156, 18, 0.1);
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .filter-tag:hover, .filter-tag.active {
+            background-color: var(--primary);
+            color: white;
+        }
+        /* Quote of the Day Section */
+        .quote-section {
+            background-color: var(--light);
+            padding: 60px 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .quote-section::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: 10rem;
+            color: rgba(243, 156, 18, 0.1);
+            font-family: serif;
+            z-index: 0;
+        }
+        .quote-text {
+            font-size: 2rem;
+            font-style: italic;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            line-height: 1.4;
+            position: relative;
+            z-index: 1;
+        }
+        .quote-author {
+            font-size: 1.2rem;
+            color: var(--primary);
+            font-weight: 500;
+        }
+        .quote-category {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+        .quote-source {
+            display: inline-block;
+            background-color: var(--purple);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+        }
+        /* Quote Actions */
+        .quote-actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+        .quote-action-btn {
+            background: none;
+            border: none;
+            color: var(--primary);
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .quote-action-btn:hover {
+            color: var(--accent);
+            transform: translateY(-3px);
+        }
+        /* Categories Section */
+        .categories {
+            margin-bottom: 80px;
+        }
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+        }
+        .category-card {
+            background-color: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: var(--primary);
+            transform: translateX(-100%);
+            transition: transform 0.3s;
+        }
+        .category-card:hover::before {
+            transform: translateX(0);
+        }
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .category-card:nth-child(1) .category-icon { color: var(--primary); }
+        .category-card:nth-child(2) .category-icon { color: var(--success); }
+        .category-card:nth-child(3) .category-icon { color: var(--accent); }
+        .category-card:nth-child(4) .category-icon { color: var(--purple); }
+        /* Motivation Cards Section */
+        .motivation-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .motivation-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .motivation-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+        .card-image {
+            height: 180px;
+            overflow: hidden;
+        }
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .motivation-card:hover .card-image img {
+            transform: scale(1.1);
+        }
+        .card-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-quote {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            font-style: italic;
+            color: var(--dark);
+            flex-grow: 1;
+        }
+        .card-author {
+            font-weight: 500;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .card-category {
+            display: inline-block;
+            background-color: var(--light);
+            color: var(--primary);
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+        .card-source {
+            display: inline-block;
+            background-color: var(--purple);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-left: 10px;
+        }
+        .card-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .card-action-btn {
+            background: none;
+            border: none;
+            color: var(--primary);
+            cursor: pointer;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .card-action-btn:hover {
+            color: var(--accent);
+        }
+        /* Rating System */
+        .rating {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .star {
+            color: #ddd;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .star.active,
+        .star:hover {
+            color: #ffc107;
+        }
+        /* Comments Section */
+        .comments-section {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+        }
+        .comment {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: rgba(0,0,0,0.02);
+            border-radius: 5px;
+        }
+        .comment-author {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+        .comment-text {
+            font-size: 0.9rem;
+            color: var(--dark);
+        }
+        .comment-form {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .comment-input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .comment-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        /* Contribution Section */
+        .contribution {
+            background-color: var(--secondary);
+            color: white;
+            padding: 60px 50px;
+            border-radius: 15px;
+        }
+        .contribution h2 {
+            color: white;
+            border-color: var(--primary);
+        }
+        .contribution-form {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        /* Testimonials Section */
+        .testimonials {
+            background-color: var(--light);
+            padding: 60px 40px;
+            border-radius: 15px;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .testimonial-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 4rem;
+            color: var(--primary);
+            opacity: 0.2;
+            font-family: serif;
+        }
+        .testimonial-text {
+            margin-bottom: 20px;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+        .testimonial-author {
+            font-weight: 500;
+            color: var(--secondary);
+        }
+        .testimonial-role {
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+        .footer-section h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--primary);
+            padding-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .footer-section ul {
+            list-style: none;
+        }
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+        .footer-section ul li a {
+            color: white;
+            transition: color 0.3s;
+        }
+        .footer-section ul li a:hover {
+            color: var(--primary);
+        }
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            margin: 0 10px;
+            transition: all 0.3s;
+        }
+        .social-links a:hover {
+            background-color: var(--primary);
+            transform: translateY(-5px);
+        }
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        /* Domain Highlight */
+        .domain-highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        /* Notification */
+        .notification {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            background-color: var(--success);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transform: translateX(400px);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+            max-width: 350px;
+        }
+        .notification.show {
+            transform: translateX(0);
+        }
+        .notification-close {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        /* Loading Spinner */
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            z-index: 100;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        .back-to-top:hover {
+            background-color: var(--accent);
+            transform: translateY(-5px);
+        }
+        /* Share Buttons */
+        .share-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .share-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin: 0 5px;
+            color: white;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .share-facebook { background-color: #3b5998; }
+        .share-twitter { background-color: #1da1f2; }
+        .share-whatsapp { background-color: #25d366; }
+        .share-link { background-color: var(--primary); }
+        .share-instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+        .share-pinterest { background-color: #bd081c; }
+        .share-linkedin { background-color: #0077b5; }
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        }
+        /* Motivation Widget */
+        .motivation-widget {
+            position: fixed;
+            bottom: 100px;
+            left: 20px;
+            background-color: var(--primary);
+            color: white;
+            width: 250px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 100;
+            transition: all 0.3s;
+            transform: translateX(-300px);
+        }
+        .motivation-widget.show {
+            transform: translateX(0);
+        }
+        .widget-toggle {
+            position: absolute;
+            right: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 0 10px 10px 0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .widget-content {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        /* Daily Motivation Notification */
+        .daily-notification {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-100px);
+            background-color: var(--primary);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 1001;
+            transition: transform 0.5s ease;
+            max-width: 80%;
+            text-align: center;
+        }
+        .daily-notification.show {
+            transform: translateX(-50%) translateY(20px);
+        }
+        .notification-close-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        /* User Profile Section */
+        .user-profile {
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+        .user-avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .user-name {
+            font-weight: 500;
+            color: white;
+        }
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            z-index: 1001;
+            overflow-y: auto;
+        }
+        .modal-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 30px;
+            border-radius: 15px;
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+            animation: modalFadeIn 0.5s;
+        }
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--dark);
+        }
+        /* Favorites Section */
+        .favorites-section {
+            background-color: var(--light);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .favorites-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .favorite-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+        }
+        .favorite-remove {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: var(--accent);
+            cursor: pointer;
+        }
+        /* Challenges Section */
+        .challenges-section {
+            background-color: var(--light);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .challenge-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .challenge-info {
+            flex: 1;
+        }
+        .challenge-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .challenge-desc {
+            font-size: 0.9rem;
+            color: var(--dark);
+        }
+        .challenge-join {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .challenge-join:hover {
+            background-color: var(--accent);
+        }
+        /* Books Section */
+        .books-section {
+            background-color: var(--light);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .book-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .book-card:hover {
+            transform: translateY(-5px);
+        }
+        .book-image {
+            height: 250px;
+            overflow: hidden;
+        }
+        .book-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .book-info {
+            padding: 15px;
+        }
+        .book-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .book-author {
+            font-size: 0.9rem;
+            color: var(--dark);
+        }
+        /* Videos Section */
+        .videos-section {
+            background-color: var(--light);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .video-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+        .video-thumbnail {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+        }
+        .video-thumbnail img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .video-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background-color: rgba(243, 156, 18, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .video-info {
+            padding: 15px;
+        }
+        .video-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .video-duration {
+            font-size: 0.8rem;
+            color: var(--dark);
+        }
+        /* Podcast Section */
+        .podcast-section {
+            background-color: var(--light);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .podcast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .podcast-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .podcast-card:hover {
+            transform: translateY(-5px);
+        }
+        .podcast-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        .podcast-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .podcast-info {
+            padding: 15px;
+        }
+        .podcast-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .podcast-episodes {
+            font-size: 0.8rem;
+            color: var(--dark);
+        }
+        .podcast-play {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 10px auto 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .podcast-play:hover {
+            background-color: var(--accent);
+        }
+        /* Calendar Section */
+        .calendar-section {
+            background-color: var(--light);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .calendar-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .calendar-nav {
+            display: flex;
+            gap: 10px;
+        }
+        .calendar-nav button {
+            background: none;
+            border: none;
+            color: var(--primary);
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+        }
+        .calendar-day-header {
+            text-align: center;
+            font-weight: 600;
+            padding: 10px 0;
+            color: var(--dark);
+        }
+        .calendar-day {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .calendar-day:hover {
+            background-color: rgba(243, 156, 18, 0.1);
+        }
+        .calendar-day.today {
+            background-color: var(--primary);
+            color: white;
+        }
+        .calendar-day.has-motivation {
+            position: relative;
+        }
+        .calendar-day.has-motivation::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 5px;
+            height: 5px;
+            background-color: var(--accent);
+            border-radius: 50%;
+        }
+        /* Quote Generator Section */
+        .quote-generator {
+            background-color: var(--light);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .generator-controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .generator-select {
+            flex: 1;
+            min-width: 200px;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: white;
+        }
+        .generator-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .generator-btn:hover {
+            background-color: var(--accent);
+        }
+        .generator-result {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .generator-quote {
+            font-size: 1.5rem;
+            font-style: italic;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+        .generator-author {
+            font-weight: 500;
+            color: var(--primary);
+        }
+        /* Text to Speech */
+        .tts-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .tts-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .tts-btn:hover {
+            background-color: var(--accent);
+        }
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .quote-text {
+                font-size: 1.8rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                width: 100%;
+                margin-top: 15px;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 5px 10px;
+            }
+            .mobile-menu-btn {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .quote-text {
+                font-size: 1.5rem;
+            }
+            .contribution {
+                padding: 40px 20px;
+            }
+            .testimonials {
+                padding: 40px 20px;
+            }
+            .footer-content {
+                flex-direction: column;
+            }
+            .footer-section {
+                text-align: center;
+            }
+            .search-container {
+                flex-direction: column;
+            }
+            .search-input {
+                border-radius: 30px;
+                margin-bottom: 10px;
+            }
+            .search-btn {
+                border-radius: 30px;
+            }
+            .motivation-widget {
+                width: 200px;
+                left: 10px;
+            }
+            .modal-content {
+                width: 95%;
+                margin: 5% auto;
+            }
+            .welcome-message {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .quote-text {
+                font-size: 1.3rem;
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .motivation-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .books-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .videos-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .podcast-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome Message -->
+    <div class="welcome-message" id="welcomeMessage">
+        <p>Hai selamat datang di web ini, web ini dibuat oleh Ravanza Keana Cetta yang di bantu orang Keyzia Zachwa Rachmadhina dengan tujuan untuk membuat semua orang menjadi termotivasi</p>
+        <button class="welcome-close" id="welcomeClose">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-box">MΛNGKİ</div>
+                <span>KATAMANGKI.COM</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#quotes">Kata Motivasi</a></li>
+                    <li><a href="#create">Buat Motivasi</a></li>
+                    <li><a href="#categories">Kategori</a></li>
+                    <li><a href="#features">Fitur</a></li>
+                    <li><a href="#contribute">Berkontribusi</a></li>
+                    <li><a href="#testimonials">Testimoni</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="font-controls">
+                    <button class="font-btn" id="fontDecrease" title="Perkecil Font">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button class="font-btn" id="fontNormal" title="Font Normal">
+                        <i class="fas fa-font"></i>
+                    </button>
+                    <button class="font-btn" id="fontIncrease" title="Perbesar Font">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
+                <button class="theme-toggle" id="themeToggle" title="Ganti Tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="user-profile" id="userProfile">
+                    <div class="user-avatar">U</div>
+                    <span class="user-name">User</span>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1><span class="domain-highlight">KATAMANGKI.COM</span> - Sistem Motivasi</h1>
+            <p>Temukan kata-kata penyemangat yang akan membangkitkan semangat hidup Anda dan menginspirasi setiap langkah perjalanan Anda</p>
+            <a href="#quotes" class="btn">Temukan Motivasi Hari Ini</a>
+            <a href="#create" class="btn btn-secondary" style="margin-left: 15px;">Buat Motivasi Anda</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2>Fitur Unggulan KATAMANGKI.COM</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>1000+ Kata Motivasi</h3>
+                    <p>Koleksi lengkap kata-kata penyemangat dari berbagai kategori</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Pencarian Cerdas</h3>
+                    <p>Cari kata motivasi berdasarkan topik, emosi, atau situasi</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Favorit Pribadi</h3>
+                    <p>Simpan kata motivasi favorit untuk akses cepat</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3>Bagikan ke Sosmed</h3>
+                    <p>Bagikan inspirasi ke berbagai platform media sosial</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3>Mode Gelap</h3>
+                    <p>Nyaman membaca di malam hari dengan mode gelap</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <h3>Text-to-Speech</h3>
+                    <p>Dengarkan kata motivasi dengan fitur suara</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Kalender Motivasi</h3>
+                    <p>Motivasi harian terintegrasi dengan kalender</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Tantangan Motivasi</h3>
+                    <p>Ikuti tantangan dan dapatkan achievement</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Create Quote Section -->
+        <section id="create" class="create-quote-section">
+            <h2>Buat Kata Motivasi Anda Sendiri</h2>
+            <div class="create-tabs">
+                <button class="create-tab active" data-tab="user">Buat Sendiri</button>
+                <button class="create-tab" data-tab="ai">AI Generator</button>
+            </div>
+            
+            <!-- User Create Tab -->
+            <div class="create-tab-content active" id="user-tab">
+                <form class="create-form" id="userCreateForm">
+                    <div class="form-group">
+                        <label for="userQuoteText">Kata Motivasi</label>
+                        <textarea id="userQuoteText" name="userQuoteText" required placeholder="Tulis kata motivasi yang ingin Anda bagikan..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">Nama Anda</label>
+                        <input type="text" id="userName" name="userName" required placeholder="Nama Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="userCategory">Kategori</label>
+                        <select id="userCategory" name="userCategory" required>
+                            <option value="">Pilih Kategori</option>
+                            <option value="kesuksesan">Kesuksesan</option>
+                            <option value="kehidupan">Kehidupan</option>
+                            <option value="cinta">Cinta</option>
+                            <option value="spiritual">Spiritual</option>
+                            <option value="persahabatan">Persahabatan</option>
+                            <option value="keluarga">Keluarga</option>
+                            <option value="karir">Karir</option>
+                            <option value="kesehatan">Kesehatan</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Bagikan Motivasi</button>
+                </form>
+            </div>
+            
+            <!-- AI Generator Tab -->
+            <div class="create-tab-content" id="ai-tab">
+                <div class="ai-generator">
+                    <h3>Generator Kata Motivasi AI</h3>
+                    <p>Pilih kategori dan topik untuk generate kata motivasi dengan AI</p>
+                    
+                    <div class="ai-controls">
+                        <div class="ai-tag" data-ai-tag="inspirasi">Inspirasi</div>
+                        <div class="ai-tag" data-ai-tag="semangat">Semangat</div>
+                        <div class="ai-tag" data-ai-tag="kesuksesan">Kesuksesan</div>
+                        <div class="ai-tag" data-ai-tag="kehidupan">Kehidupan</div>
+                        <div class="ai-tag" data-ai-tag="cinta">Cinta</div>
+                        <div class="ai-tag" data-ai-tag="persahabatan">Persahabatan</div>
+                        <div class="ai-tag" data-ai-tag="keluarga">Keluarga</div>
+                        <div class="ai-tag" data-ai-tag="karir">Karir</div>
+                        <div class="ai-tag" data-ai-tag="kesehatan">Kesehatan</div>
+                        <div class="ai-tag" data-ai-tag="spiritual">Spiritual</div>
+                    </div>
+                    
+                    <button class="btn" id="generateAiBtn">Generate dengan AI</button>
+                    
+                    <div class="ai-result" id="aiResult">
+                        <p>Klik tombol generate untuk membuat kata motivasi dengan AI</p>
+                    </div>
+                    
+                    <div class="ai-actions" id="aiActions" style="display: none;">
+                        <button class="btn" id="saveAiQuote">Simpan</button>
+                        <button class="btn btn-secondary" id="regenerateAiBtn">Generate Ulang</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <h2>Cari Kata Motivasi</h2>
+            <div class="search-container">
+                <input type="text" class="search-input" id="searchInput" placeholder="Ketik kata kunci motivasi...">
+                <button class="search-btn" id="searchBtn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="search-filters">
+                <div class="filter-tag active" data-filter="all">Semua</div>
+                <div class="filter-tag" data-filter="kesuksesan">Kesuksesan</div>
+                <div class="filter-tag" data-filter="kehidupan">Kehidupan</div>
+                <div class="filter-tag" data-filter="cinta">Cinta</div>
+                <div class="filter-tag" data-filter="spiritual">Spiritual</div>
+                <div class="filter-tag" data-filter="persahabatan">Persahabatan</div>
+                <div class="filter-tag" data-filter="keluarga">Keluarga</div>
+                <div class="filter-tag" data-filter="karir">Karir</div>
+                <div class="filter-tag" data-filter="kesehatan">Kesehatan</div>
+            </div>
+        </section>
+
+        <!-- Quote of the Day Section -->
+        <section id="quotes" class="quote-section">
+            <h2>Kata Motivasi Hari Ini</h2>
+            <div class="quote-text" id="dailyQuote">
+                "Kesuksesan bukanlah kunci kebahagiaan. Kebahagiaanlah kunci kesuksesan. Jika Anda mencintai apa yang Anda lakukan, Anda akan berhasil."
+            </div>
+            <div class="quote-author" id="dailyAuthor">- Albert Schweitzer</div>
+            <div class="quote-category" id="dailyCategory">Kesuksesan</div>
+            <div class="quote-source" id="dailySource">Terkenal</div>
+            <div class="quote-actions">
+                <button class="quote-action-btn" id="likeQuote">
+                    <i class="far fa-heart"></i> Suka
+                </button>
+                <button class="quote-action-btn" id="favoriteQuote">
+                    <i class="far fa-bookmark"></i> Favorit
+                </button>
+                <button class="quote-action-btn" id="shareQuote">
+                    <i class="fas fa-share-alt"></i> Bagikan
+                </button>
+                <button class="quote-action-btn" id="speakQuote">
+                    <i class="fas fa-volume-up"></i> Dengarkan
+                </button>
+            </div>
+            <div class="share-container">
+                <div class="share-btn share-facebook" title="Share ke Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="share-btn share-twitter" title="Share ke Twitter">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="share-btn share-whatsapp" title="Share ke WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="share-btn share-instagram" title="Share ke Instagram">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="share-btn share-pinterest" title="Share ke Pinterest">
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
+                <div class="share-btn share-linkedin" title="Share ke LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="share-btn share-link" title="Copy Link">
+                    <i class="fas fa-link"></i>
+                </div>
+            </div>
+            <button class="btn" id="newQuoteBtn" style="margin-top: 20px;">
+                <span id="newQuoteBtnText">Motivasi Lainnya</span>
+            </button>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="categories">
+            <h2>Kategori Motivasi</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="kesuksesan" data-aos="zoom-in">
+                    <div class="category-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Kesuksesan</h3>
+                    <p>Kata-kata motivasi untuk meraih kesuksesan dalam hidup</p>
+                </div>
+                <div class="category-card" data-category="kehidupan" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="category-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Kehidupan</h3>
+                    <p>Inspirasi untuk menjalani kehidupan yang bermakna</p>
+                </div>
+                <div class="category-card" data-category="cinta" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="category-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Cinta</h3>
+                    <p>Kata-kata indah tentang cinta dan kasih sayang</p>
+                </div>
+                <div class="category-card" data-category="spiritual" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="category-icon">
+                        <i class="fas fa-pray"></i>
+                    </div>
+                    <h3>Spiritual</h3>
+                    <p>Renungan dan motivasi untuk jiwa yang tenang</p>
+                </div>
+                <div class="category-card" data-category="persahabatan" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="category-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Persahabatan</h3>
+                    <p>Motivasi tentang nilai persahabatan sejati</p>
+                </div>
+                <div class="category-card" data-category="keluarga" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Keluarga</h3>
+                    <p>Kata-kata hangat untuk keluarga tercinta</p>
+                </div>
+                <div class="category-card" data-category="karir" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="category-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Karir</h3>
+                    <p>Inspirasi untuk sukses dalam dunia karir</p>
+                </div>
+                <div class="category-card" data-category="kesehatan" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Kesehatan</h3>
+                    <p>Motivasi untuk hidup sehat dan bugar</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Motivation Cards Section -->
+        <section>
+            <h2>Koleksi Kata Motivasi</h2>
+            <div class="motivation-cards" id="motivationCards">
+                <!-- Cards akan diisi oleh JavaScript -->
+            </div>
+        </section>
+
+        <!-- Favorites Section -->
+        <section id="favorites" class="favorites-section">
+            <h2>Koleksi Favorit Saya</h2>
+            <div class="favorites-grid" id="favoritesGrid">
+                <p style="text-align: center; width: 100%;">Belum ada kata motivasi favorit. Klik ikon bookmark pada kata motivasi untuk menambahkan ke sini.</p>
+            </div>
+        </section>
+
+        <!-- Books Section -->
+        <section id="books" class="books-section">
+            <h2>Rekomendasi Buku Motivasi</h2>
+            <div class="books-grid">
+                <div class="book-card" data-aos="fade-up">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Book Cover">
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">The 7 Habits of Highly Effective People</div>
+                        <div class="book-author">Stephen R. Covey</div>
+                    </div>
+                </div>
+                <div class="book-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Book Cover">
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">Think and Grow Rich</div>
+                        <div class="book-author">Napoleon Hill</div>
+                    </div>
+                </div>
+                <div class="book-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Book Cover">
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">The Power of Positive Thinking</div>
+                        <div class="book-author">Norman Vincent Peale</div>
+                    </div>
+                </div>
+                <div class="book-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="book-image">
+                        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Book Cover">
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">How to Win Friends and Influence People</div>
+                        <div class="book-author">Dale Carnegie</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+        <section id="videos" class="videos-section">
+            <h2>Video Motivasi</h2>
+            <div class="videos-grid">
+                <div class="video-card" data-aos="fade-up">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1574717024453-354056aafa98?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Video Thumbnail">
+                        <div class="video-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-title">10 Cara Membangkitkan Motivasi Diri</div>
+                        <div class="video-duration">15:24</div>
+                    </div>
+                </div>
+                <div class="video-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1574717024453-354056aafa98?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Video Thumbnail">
+                        <div class="video-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-title">Mindset Orang Sukses</div>
+                        <div class="video-duration">22:15</div>
+                    </div>
+                </div>
+                <div class="video-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="video-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Video Thumbnail">
+                        <div class="video-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-title">Kekuatan Pikiran Positif</div>
+                        <div class="video-duration">18:42</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Podcast Section -->
+        <section id="podcast" class="podcast-section">
+            <h2>Podcast Motivasi</h2>
+            <div class="podcast-grid">
+                <div class="podcast-card" data-aos="fade-up">
+                    <div class="podcast-image">
+                        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Podcast Cover">
+                    </div>
+                    <div class="podcast-info">
+                        <div class="podcast-title">Hidup Penuh Makna</div>
+                        <div class="podcast-episodes">24 Episode</div>
+                    </div>
+                    <div class="podcast-play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="podcast-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="podcast-image">
+                        <img src="https://images.unsplash.com/photo-1499931365284-6bbfecad0815?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Podcast Cover">
+                    </div>
+                    <div class="podcast-info">
+                        <div class="podcast-title">Jalan Menuju Sukses</div>
+                        <div class="podcast-episodes">18 Episode</div>
+                    </div>
+                    <div class="podcast-play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="podcast-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="podcast-image">
+                        <img src="https://images.unsplash.com/photo-1516280440674-126d48d05ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Podcast Cover">
+                    </div>
+                    <div class="podcast-info">
+                        <div class="podcast-title">Kekuatan Dalam Diri</div>
+                        <div class="podcast-episodes">32 Episode</div>
+                    </div>
+                    <div class="podcast-play">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calendar Section -->
+        <section id="calendar" class="calendar-section">
+            <h2>Kalender Motivasi</h2>
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <h3 id="calendarMonth">November 2023</h3>
+                    <div class="calendar-nav">
+                        <button id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+                        <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="calendar-grid" id="calendarGrid">
+                    <!-- Calendar will be generated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Generator Section -->
+        <section id="generator" class="quote-generator">
+            <h2>Generator Kata Motivasi</h2>
+            <div class="generator-controls">
+                <select class="generator-select" id="generatorCategory">
+                    <option value="">Pilih Kategori</option>
+                    <option value="kesuksesan">Kesuksesan</option>
+                    <option value="kehidupan">Kehidupan</option>
+                    <option value="cinta">Cinta</option>
+                    <option value="spiritual">Spiritual</option>
+                    <option value="persahabatan">Persahabatan</option>
+                    <option value="keluarga">Keluarga</option>
+                    <option value="karir">Karir</option>
+                    <option value="kesehatan">Kesehatan</option>
+                </select>
+                <select class="generator-select" id="generatorEmotion">
+                    <option value="">Pilih Emosi</option>
+                    <option value="senang">Senang</option>
+                    <option value="sedih">Sedih</option>
+                    <option value="marah">Marah</option>
+                    <option value="takut">Takut</option>
+                    <option value="terkejut">Terkejut</option>
+                    <option value="netral">Netral</option>
+                </select>
+                <select class="generator-select" id="generatorSituation">
+                    <option value="">Pilih Situasi</option>
+                    <option value="pagi">Pagi Hari</option>
+                    <option value="siang">Siang Hari</option>
+                    <option value="sore">Sore Hari</option>
+                    <option value="malam">Malam Hari</option>
+                    <option value="kerja">Saat Bekerja</option>
+                    <option value="belajar">Saat Belajar</option>
+                    <option value="olahraga">Saat Olahraga</option>
+                </select>
+                <button class="generator-btn" id="generateBtn">Generate</button>
+            </div>
+            <div class="generator-result" id="generatorResult">
+                <div class="generator-quote">Pilih kategori, emosi, dan situasi untuk generate kata motivasi</div>
+                <div class="generator-author"></div>
+                <div class="tts-controls">
+                    <button class="tts-btn" id="speakGenerated">
+                        <i class="fas fa-volume-up"></i> Dengarkan
+                    </button>
+                    <button class="tts-btn" id="copyGenerated">
+                        <i class="fas fa-copy"></i> Salin
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges Section -->
+        <section id="challenges" class="challenges-section">
+            <h2>Tantangan Motivasi</h2>
+            <div class="challenge-card" data-aos="fade-up">
+                <div class="challenge-info">
+                    <div class="challenge-title">30 Hari Positive Thinking</div>
+                    <div class="challenge-desc">Tulis satu hal positif setiap hari selama 30 hari</div>
+                </div>
+                <button class="challenge-join">Ikuti</button>
+            </div>
+            <div class="challenge-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="challenge-info">
+                    <div class="challenge-title">7 Hari Tanpa Mengeluh</div>
+                    <div class="challenge-desc">Hindari mengeluh selama 7 hari penuh</div>
+                </div>
+                <button class="challenge-join">Ikuti</button>
+            </div>
+            <div class="challenge-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="challenge-info">
+                    <div class="challenge-title">21 Hari Membentuk Kebiasaan</div>
+                    <div class="challenge-desc">Bangun kebiasaan positif dalam 21 hari</div>
+                </div>
+                <button class="challenge-join">Ikuti</button>
+            </div>
+        </section>
+
+        <!-- Contribution Section -->
+        <section id="contribute" class="contribution">
+            <h2>Berkontribusi di <span class="domain-highlight">KATAMANGKI.COM</span></h2>
+            <p>Bagikan kata-kata motivasi favorit Anda untuk menginspirasi orang lain!</p>
+            
+            <form class="contribution-form" id="contributionForm">
+                <div class="form-group">
+                    <label for="contributorName">Nama Anda</label>
+                    <input type="text" id="contributorName" name="contributorName" required>
+                </div>
+                <div class="form-group">
+                    <label for="quoteText">Kata Motivasi</label>
+                    <textarea id="quoteText" name="quoteText" required placeholder="Tulis kata-kata motivasi yang ingin Anda bagikan..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="quoteAuthor">Penulis (jika ada)</label>
+                    <input type="text" id="quoteAuthor" name="quoteAuthor" placeholder="Nama penulis atau 'Anonim'">
+                </div>
+                <div class="form-group">
+                    <label for="quoteCategory">Kategori</label>
+                    <select id="quoteCategory" name="quoteCategory" required>
+                        <option value="">Pilih Kategori</option>
+                        <option value="kesuksesan">Kesuksesan</option>
+                        <option value="kehidupan">Kehidupan</option>
+                        <option value="cinta">Cinta</option>
+                        <option value="spiritual">Spiritual</option>
+                        <option value="persahabatan">Persahabatan</option>
+                        <option value="keluarga">Keluarga</option>
+                        <option value="karir">Karir</option>
+                        <option value="kesehatan">Kesehatan</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn" id="submitBtn">
+                    <span id="submitBtnText">Bagikan Motivasi</span>
+                </button>
+            </form>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <h2>Testimoni Pengunjung <span class="domain-highlight">KATAMANGKI.COM</span></h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card" data-aos="fade-up">
+                    <div class="testimonial-text">
+                        "Website ini benar-benar mengubah hidup saya! Setiap kali merasa down, saya membuka KATAMANGKI.COM dan menemukan kata-kata yang tepat untuk membangkitkan semangat saya."
+                    </div>
+                    <div class="testimonial-author">Andi Pratama</div>
+                    <div class="testimonial-role">Pengusaha</div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-text">
+                        "Koleksi kata-kata motivasinya sangat lengkap dan berkualitas. Saya sering membagikannya ke teman-teman yang sedang membutuhkan semangat."
+                    </div>
+                    <div class="testimonial-author">Siti Nurhaliza</div>
+                    <div class="testimonial-role">Mahasiswa</div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-text">
+                        "Desain web yang inspiratif dan konten yang bermanfaat. KATAMANGKI.COM menjadi sumber motivasi harian saya. Terima kasih!"
+                    </div>
+                    <div class="testimonial-author">Budi Santoso</div>
+                    <div class="testimonial-role">Karyawan Swasta</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tentang Kami</h3>
+                    <ul>
+                        <li><a href="#about">Tentang KATAMANGKI.COM</a></li>
+                        <li><a href="#team">Tim Kami</a></li>
+                        <li><a href="#career">Karir</a></li>
+                        <li><a href="#press">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kategori</h3>
+                    <ul>
+                        <li><a href="#" onclick="filterByCategory('kesuksesan')">Kesuksesan</a></li>
+                        <li><a href="#" onclick="filterByCategory('kehidupan')">Kehidupan</a></li>
+                        <li><a href="#" onclick="filterByCategory('cinta')">Cinta</a></li>
+                        <li><a href="#" onclick="filterByCategory('spiritual')">Spiritual</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Fitur</h3>
+                    <ul>
+                        <li><a href="#features">Fitur Unggulan</a></li>
+                        <li><a href="#create">Buat Motivasi</a></li>
+                        <li><a href="#books">Buku Motivasi</a></li>
+                        <li><a href="#videos">Video Motivasi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Bantuan</h3>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Hubungi Kami</a></li>
+                        <li><a href="#privacy">Kebijakan Privasi</a></li>
+                        <li><a href="#terms">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Logo Resmi</h3>
+                    <div class="footer-logo">
+                        <div class="logo-box" style="font-size: 1.5rem; padding: 10px 15px;">MΛNGKİ</div>
+                    </div>
+                    <p style="margin-top: 15px;">KATAMANGKI.COM adalah platform motivasi terpercaya dengan koleksi kata-kata penyemangat terlengkap.</p>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 <span class="domain-highlight">KATAMANGKI.COM</span> - Sistem Motivasi & Kata Penyemangat. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Motivation Widget -->
+    <div class="motivation-widget" id="motivationWidget">
+        <button class="widget-toggle" id="widgetToggle">
+            <i class="fas fa-quote-right"></i>
+        </button>
+        <div class="widget-content" id="widgetContent">
+            <p>Setiap hari adalah halaman baru dalam buku kehidupan Anda. Tulislah dengan baik.</p>
+        </div>
+    </div>
+
+    <!-- Daily Notification -->
+    <div class="daily-notification" id="dailyNotification">
+        <button class="notification-close-btn" id="dailyNotificationClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <div id="dailyNotificationContent">
+            <strong>Motivasi Hari Ini:</strong> "Hari ini adalah kesempatan Anda untuk menjadi lebih baik dari kemarin."
+        </div>
+    </div>
+
+    <!-- User Profile Modal -->
+    <div class="modal" id="userModal">
+        <div class="modal-content">
+            <span class="modal-close" id="userModalClose">&times;</span>
+            <h2>Profil Pengguna</h2>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="userName">Nama Lengkap</label>
+                    <input type="text" id="userName" name="userName" required>
+                </div>
+                <div class="form-group">
+                    <label for="userEmail">Email</label>
+                    <input type="email" id="userEmail" name="userEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="userBio">Bio (opsional)</label>
+                    <textarea id="userBio" name="userBio" placeholder="Ceritakan tentang diri Anda..."></textarea>
+                </div>
+                <button type="submit" class="btn">Simpan Profil</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <button class="notification-close" id="notificationClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <div id="notificationMessage"></div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Database kata-kata motivasi
+        const quotes = [
+            // Kategori: Kesuksesan
+            {
+                text: "Kesuksesan bukanlah kunci kebahagiaan. Kebahagiaanlah kunci kesuksesan. Jika Anda mencintai apa yang Anda lakukan, Anda akan berhasil.",
+                author: "Albert Schweitzer",
+                category: "kesuksesan",
+                source: "Terkenal"
+            },
+            {
+                text: "Satu-satunya cara untuk melakukan pekerjaan hebat adalah dengan mencintai apa yang Anda lakukan.",
+                author: "Steve Jobs",
+                category: "kesuksesan",
+                source: "Terkenal"
+            },
+            {
+                text: "Jangan pernah menyerah. Hari ini adalah kesempatan Anda untuk membangun masa depan yang Anda inginkan.",
+                author: "Anonim",
+                category: "kesuksesan",
+                source: "Terkenal"
+            },
+            {
+                text: "Kesuksesan adalah kemampu untuk pergi dari kegagalan ke kegagalan tanpa kehilangan antusiasme.",
+                author: "Winston Churchill",
+                category: "kesuksesan",
+                source: "Terkenal"
+            },
+            {
+                text: "Jalan menuju kesuksesan dan jalan menuju kegagalan hampir sama persis. Bedanya adalah: Anda harus menghadapi rintangan di jalan menuju kesuksesan.",
+                author: "Colin Powell",
+                category: "kesuksesan",
+                source: "Terkenal"
+            },
+            {
+                text: "Saya tidak gagal. Saya hanya menemukan 10.000 cara yang tidak berhasil.",
+                author: "Thomas Edison",
+                category: "kesuksesan",
+                source: "Terkenal"
+            },
+            {
+                text: "Kesuksesan bukanlah akhir, kegagalan bukanlah fatal: yang terpenting adalah keberanian untuk melanjutkan.",
+                author: "Winston Churchill",
+                category: "kesuksesan",
+                source: "Terkenal"
+            },
+            {
+                text: "Jangan takut gagal. Takutlah pada tempat di mana Anda akan berada jika Anda tidak pernah mencoba.",
+                author: "Nolan Ryan",
+                category: "kesuksesan",
+                source: "Terkenal"
+            },
+            {
+                text: "Kesuksesan adalah berjalan dari kegagalan ke kegagalan tanpa kehilangan antusiasme.",
+                author: "Winston Churchill",
+                category: "kesuksesan",
+                source: "Terkenal"
+            },
+            {
+                text: "Orang sukses melihat kesulitan sebagai tantangan, bukan sebagai alasan untuk menyerah.",
+                author: "Anonim",
+                category: "kesuksesan",
+                source: "Terkenal"
+            },
+            
+            // Kategori: Kehidupan
+            {
+                text: "Kehidupan bukanlah masalah yang harus diselesaikan, tetapi kenyataan yang harus dialami.",
+                author: "Soren Kierkegaard",
+                category: "kehidupan",
+                source: "Terkenal"
+            },
+            {
+                text: "Kehidupan adalah 10% apa yang terjadi pada Anda dan 90% bagaimana Anda bereaksi terhadapnya.",
+                author: "Charles R. Swindoll",
+                category: "kehidupan",
+                source: "Terkenal"
+            },
+            {
+                text: "Hidup adalah sebuah petualangan yang berani atau tidak sama sekali.",
+                author: "Helen Keller",
+                category: "kehidupan",
+                source: "Terkenal"
+            },
+            {
+                text: "Kehidupan ini singkat. Luangkan waktu untuk mencintai, memberi, dan tertawa. Itu adalah hadiah untuk hidup.",
+                author: "Anonim",
+                category: "kehidupan",
+                source: "Terkenal"
+            },
+            {
+                text: "Hidup bukan tentang menunggu badai berlalu, tetapi belajar menari di tengah hujan.",
+                author: "Vivian Greene",
+                category: "kehidupan",
+                source: "Terkenal"
+            },
+            {
+                text: "Kehidupan adalah perjalanan yang harus dinikmati setiap langkahnya, bukan tujuan akhir.",
+                author: "Anonim",
+                category: "kehidupan",
+                source: "Terkenal"
+            },
+            {
+                text: "Jangan hitung hari-hari Anda, buat hari-hari Anda menghitung.",
+                author: "Muhammad Ali",
+                category: "kehidupan",
+                source: "Terkenal"
+            },
+            {
+                text: "Hidup adalah perubahan. Pertumbuhan adalah opsional. Pilih dengan bijak.",
+                author: "Karen Kaiser Clark",
+                category: "kehidupan",
+                source: "Terkenal"
+            },
+            {
+                text: "Kehidupan adalah mimpi bagi yang bijak, permainan bagi yang bodoh, komedi bagi yang kaya, dan tragedi bagi yang miskin.",
+                author: "Sholom Aleichem",
+                category: "kehidupan",
+                source: "Terkenal"
+            },
+            {
+                text: "Hidup itu seperti bersepeda. Untuk menjaga keseimbangan, Anda harus terus bergerak.",
+                author: "Albert Einstein",
+                category: "kehidupan",
+                source: "Terkenal"
+            },
+            
+            // Kategori: Cinta
+            {
+                text: "Cinta bukanlah tentang melihat satu sama lain, tetapi melihat ke arah yang sama bersama-sama.",
+                author: "Antoine de Saint-Exupery",
+                category: "cinta",
+                source: "Terkenal"
+            },
+            {
+                text: "Cinta adalah ketika Anda menyadari bahwa dia sama gila nya seperti Anda.",
+                author: "Bob Marley",
+                category: "cinta",
+                source: "Terkenal"
+            },
+            {
+                text: "Cinta tidak terdiri dari melihat satu sama lain, tetapi dalam melihat ke arah yang sama bersama-sama.",
+                author: "Antoine de Saint-Exupery",
+                category: "cinta",
+                source: "Terkenal"
+            },
+            {
+                text: "Cinta adalah satu-satunya kekuatan yang mampu mengubah musuh menjadi teman.",
+                author: "Martin Luther King Jr.",
+                category: "cinta",
+                source: "Terkenal"
+            },
+            {
+                text: "Cinta adalah teman, api, surga yang tak bisa dijangkau oleh keinginan.",
+                author: "Jalaluddin Rumi",
+                category: "cinta",
+                source: "Terkenal"
+            },
+            {
+                text: "Cinta sejati tidak datang dari menemukan orang sempurna, tetapi dengan belajar melihat orang tidak sempurna dengan sempurna.",
+                author: "Angelita Lim",
+                category: "cinta",
+                source: "Terkenal"
+            },
+            {
+                text: "Cinta adalah kekuatan terbesar di dunia, dan sekaligus yang paling dirahasiakan.",
+                author: "Anonim",
+                category: "cinta",
+                source: "Terkenal"
+            },
+            {
+                text: "Cinta bukan tentang siapa yang Anda miliki di hidup Anda. Ini tentang siapa yang Anda miliki di hati Anda.",
+                author: "Anonim",
+                category: "cinta",
+                source: "Terkenal"
+            },
+            {
+                text: "Cinta adalah ketika Anda menyadari bahwa dia sama gila nya seperti Anda.",
+                author: "Bob Marley",
+                category: "cinta",
+                source: "Terkenal"
+            },
+            {
+                text: "Cinta adalah satu-satunya kekuatan yang mampu mengubah musuh menjadi teman.",
+                author: "Martin Luther King Jr.",
+                category: "cinta",
+                source: "Terkenal"
+            },
+            
+            // Kategori: Spiritual
+            {
+                text: "Ketika Anda berjalan bersama Tuhan, Anda tidak akan pernah sendirian.",
+                author: "Anonim",
+                category: "spiritual",
+                source: "Terkenal"
+            },
+            {
+                text: "Doa adalah ketika Anda berbicara dengan Tuhan. Meditasi adalah ketika Anda mendengar Tuhan.",
+                author: "Anonim",
+                category: "spiritual",
+                source: "Terkenal"
+            },
+            {
+                text: "Kepercayaan adalah burung yang merasakan cahaya ketika fajar masih jauh.",
+                author: "Rabindranath Tagore",
+                category: "spiritual",
+                source: "Terkenal"
+            },
+            {
+                text: "Tuhan tidak memberi kita apa yang kita inginkan, tetapi apa yang kita butuhkan.",
+                author: "Anonim",
+                category: "spiritual",
+                source: "Terkenal"
+            },
+            {
+                text: "Ketika iman Anda diuji, jangan panik. Ketika Allah sedang mengubah level Anda.",
+                author: "Anonim",
+                category: "spiritual",
+                source: "Terkenal"
+            },
+            {
+                text: "Doa bukan meminta. Doa adalah mengucap syukur untuk apa yang sudah Anda terima.",
+                author: "Anonim",
+                category: "spiritual",
+                source: "Terkenal"
+            },
+            {
+                text: "Ketika Anda berdoa, percayalah bahwa Anda sudah menerimanya, dan itu akan menjadi milik Anda.",
+                author: "Mark 11:24",
+                category: "spiritual",
+                source: "Terkenal"
+            },
+            {
+                text: "Tuhan tidak memanggil yang qualified, Tuhan memanggil yang willing dan kemudian Dia akan qualify.",
+                author: "Anonim",
+                category: "spiritual",
+                source: "Terkenal"
+            },
+            {
+                text: "Ketika Anda berjalan bersama Tuhan, Anda tidak akan pernah sendirian.",
+                author: "Anonim",
+                category: "spiritual",
+                source: "Terkenal"
+            },
+            {
+                text: "Kepercayaan adalah melihat dengan cahaya hati ketika segala sesuatu tampak gelap.",
+                author: "Anonim",
+                category: "spiritual",
+                source: "Terkenal"
+            },
+            
+            // Kategori: Persahabatan
+            {
+                text: "Persahabatan sejati adalah ketika Anda berjalan ke arah yang berbeda, tetapi hati Anda tetap bersama.",
+                author: "Anonim",
+                category: "persahabatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Teman sejati adalah mereka yang tahu lagu di hati Anda dan bisa menyanyikannya kembali ketika Anda lupa liriknya.",
+                author: "Anonim",
+                category: "persahabatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Persahabatan bukan tentang siapa yang Anda kenal lama, tetapi tentang siapa yang datang dan tidak pernah pergi dari hidup Anda.",
+                author: "Anonim",
+                category: "persahabatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Teman sejati adalah mereka yang melihat Anda dalam kondisi terburuk tetapi memilih untuk melihat yang terbaik dalam Anda.",
+                author: "Anonim",
+                category: "persahabatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Persahabatan adalah satu-satunya bunga yang mekar di segala musim tanpa pernah kehilangan daunnya.",
+                author: "Anonim",
+                category: "persahabatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Teman sejati adalah mereka yang memberi Anda kebebasan untuk menjadi diri sendiri.",
+                author: "Jim Morrison",
+                category: "persahabatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Persahabatan adalah hubungan di mana Anda bisa menjadi benar-benar jujur tanpa takut dihakimi.",
+                author: "Anonim",
+                category: "persahabatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Teman sejati adalah mereka yang berjalan masuk ketika dunia lain berjalan keluar.",
+                author: "Walter Winchell",
+                category: "persahabatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Persahabatan adalah ketika Anda tahu seseorang ada di sana untuk mendukung Anda, bahkan ketika Anda salah.",
+                author: "Anonim",
+                category: "persahabatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Teman sejati adalah mereka yang membuat masalah Anda menjadi masalah mereka, hanya agar Anda tidak harus menghadapinya sendirian.",
+                author: "Anonim",
+                category: "persahabatan",
+                source: "Terkenal"
+            },
+            
+            // Kategori: Keluarga
+            {
+                text: "Keluarga bukanlah segalanya, tetapi segalanya adalah keluarga.",
+                author: "Michael J. Fox",
+                category: "keluarga",
+                source: "Terkenal"
+            },
+            {
+                text: "Keluarga adalah segalanya. Mereka adalah masa lalu, masa kini, dan masa depan.",
+                author: "Anonim",
+                category: "keluarga",
+                source: "Terkenal"
+            },
+            {
+                text: "Keluarga adalah tempat di mana hidup dimulai dan cinta tidak pernah berakhir.",
+                author: "Anonim",
+                category: "keluarga",
+                source: "Terkenal"
+            },
+            {
+                text: "Keluarga adalah jangkar yang menahan kita saat badai kehidupan mencoba untuk menghanyutkan kita.",
+                author: "Anonim",
+                category: "keluarga",
+                source: "Terkenal"
+            },
+            {
+                text: "Keluarga bukanlah tentang darah. Ini tentang siapa yang mencintai Anda dan siapa yang Anda cintai.",
+                author: "Anonim",
+                category: "keluarga",
+                source: "Terkenal"
+            },
+            {
+                text: "Keluarga adalah tempat di mana Anda selalu diterima, selalu dilindungi, dan selalu dihargai.",
+                author: "Anonim",
+                category: "keluarga",
+                source: "Terkenal"
+            },
+            {
+                text: "Keluarga adalah hadiah terbesar yang pernah Anda terima. Hargailah mereka setiap hari.",
+                author: "Anonim",
+                category: "keluarga",
+                source: "Terkenal"
+            },
+            {
+                text: "Keluarga adalah tempat di mana Anda bisa menjadi diri sendiri dan masih diterima apa adanya.",
+                author: "Anonim",
+                category: "keluarga",
+                source: "Terkenal"
+            },
+            {
+                text: "Keluarga adalah orang yang mencintai Anda tanpa syarat dan mendukung Anda tanpa batas.",
+                author: "Anonim",
+                category: "keluarga",
+                source: "Terkenal"
+            },
+            {
+                text: "Keluarga adalah fondasi di mana kita membangun hidup kita dan impian kita.",
+                author: "Anonim",
+                category: "keluarga",
+                source: "Terkenal"
+            },
+            
+            // Kategori: Karir
+            {
+                text: "Pilih pekerjaan yang Anda cintai, dan Anda tidak akan harus bekerja sehari pun dalam hidup Anda.",
+                author: "Confucius",
+                category: "karir",
+                source: "Terkenal"
+            },
+            {
+                text: "Kesuksesan dalam karir adalah ketika Anda dapat membuat perbedaan positif dalam kehidupan orang lain.",
+                author: "Anonim",
+                category: "karir",
+                source: "Terkenal"
+            },
+            {
+                text: "Jangan hanya mengejar uang. Kejar passion dan keahlian, maka uang akan mengikuti.",
+                author: "Anonim",
+                category: "karir",
+                source: "Terkenal"
+            },
+            {
+                text: "Karir yang sukses dimulai dengan impian besar dan diakhiri dengan kerja keras tanpa henti.",
+                author: "Anonim",
+                category: "karir",
+                source: "Terkenal"
+            },
+            {
+                text: "Jangan takut mengambil risiko dalam karir Anda. Itulah satu-satunya cara untuk tumbuh.",
+                author: "Anonim",
+                category: "karir",
+                source: "Terkenal"
+            },
+            {
+                text: "Karir yang memuaskan adalah ketika pekerjaan Anda selaras dengan nilai-nilai dan passion Anda.",
+                author: "Anonim",
+                category: "karir",
+                source: "Terkenal"
+            },
+            {
+                text: "Jangan pernah berhenti belajar. Ketika Anda berpikir Anda tahu segalanya, Anda berhenti tumbuh.",
+                author: "Anonim",
+                category: "karir",
+                source: "Terkenal"
+            },
+            {
+                text: "Karir yang sukses dibangun dengan fondasi integritas, kerja keras, dan ketekunan.",
+                author: "Anonim",
+                category: "karir",
+                source: "Terkenal"
+            },
+            {
+                text: "Jangan hanya bermimpi tentang kesuksesan. Bangun jalan menuju kesuksesan itu.",
+                author: "Anonim",
+                category: "karir",
+                source: "Terkenal"
+            },
+            {
+                text: "Karir yang hebat dimulai dengan komitmen untuk menjadi yang terbaik dalam apa yang Anda lakukan.",
+                author: "Anonim",
+                category: "karir",
+                source: "Terkenal"
+            },
+            
+            // Kategori: Kesehatan
+            {
+                text: "Kesehatan adalah kekayaan terbesar. Kesehatan adalah kebahagiaan.",
+                author: "Anonim",
+                category: "kesehatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Jaga kesehatan Anda sebelum sakit. Makan sehat, berolahraga, dan istirahat yang cukup.",
+                author: "Anonim",
+                category: "kesehatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Kesehatan mental sama pentingnya dengan kesehatan fisik. Jaga keduanya dengan baik.",
+                author: "Anonim",
+                category: "kesehatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Olahraga bukan hanya tentang tubuh. Ini tentang pikiran dan jiwa juga.",
+                author: "Anonim",
+                category: "kesehatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Makanan adalah bahan bakar untuk tubuh Anda. Pilih dengan bijak.",
+                author: "Anonim",
+                category: "kesehatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Tidur yang cukup adalah kunci untuk kesehatan fisik dan mental yang optimal.",
+                author: "Anonim",
+                category: "kesehatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Kesehatan adalah investasi terbaik yang bisa Anda buat untuk diri sendiri.",
+                author: "Anonim",
+                category: "kesehatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Jangan tunggu sampai sakit untuk mulai menjaga kesehatan. Mulai sekarang.",
+                author: "Anonim",
+                category: "kesehatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Kesehatan adalah hak setiap orang. Jaga dengan baik.",
+                author: "Anonim",
+                category: "kesehatan",
+                source: "Terkenal"
+            },
+            {
+                text: "Kesehatan holistik meliputi fisik, mental, emosional, dan spiritual. Seimbangkan semuanya.",
+                author: "Anonim",
+                category: "kesehatan",
+                source: "Terkenal"
+            }
+        ];
+
+        // Cek local storage untuk quotes tambahan
+        let userQuotes = JSON.parse(localStorage.getItem('userQuotes')) || [];
+        
+        // Cek local storage untuk favorites
+        let favoriteQuotes = JSON.parse(localStorage.getItem('favoriteQuotes')) || [];
+        
+        // Cek local storage untuk user data
+        let userData = JSON.parse(localStorage.getItem('userData')) || {
+            name: 'User',
+            email: '',
+            bio: ''
+        };
+        
+        // Cek local storage untuk settings
+        let settings = JSON.parse(localStorage.getItem('settings')) || {
+            theme: 'light',
+            fontSize: 'medium'
+        };
+
+        // Initialize theme
+        if (settings.theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.getElementById('themeToggle').innerHTML = '<i class="fas fa-sun"></i>';
+        }
+
+        // Initialize user profile
+        if (userData.name !== 'User') {
+            document.querySelector('.user-name').textContent = userData.name;
+            document.querySelector('.user-avatar').textContent = userData.name.charAt(0).toUpperCase();
+        }
+
+        // Fungsi untuk mendapatkan quote acak
+        function getRandomQuote() {
+            const allQuotes = [...quotes, ...userQuotes];
+            const randomIndex = Math.floor(Math.random() * allQuotes.length);
+            const quote = allQuotes[randomIndex];
+            
+            document.getElementById('dailyQuote').textContent = `"${quote.text}"`;
+            document.getElementById('dailyAuthor').textContent = `- ${quote.author}`;
+            document.getElementById('dailyCategory').textContent = quote.category.charAt(0).toUpperCase() + quote.category.slice(1);
+            document.getElementById('dailySource').textContent = quote.source;
+            
+            // Update share buttons
+            updateShareButtons(quote);
+        }
+
+        // Fungsi untuk update share buttons
+        function updateShareButtons(quote) {
+            const text = encodeURIComponent(`"${quote.text}" - ${quote.author}`);
+            const url = encodeURIComponent(window.location.href);
+            
+            document.querySelector('.share-facebook').onclick = function() {
+                window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`, '_blank');
+            };
+            
+            document.querySelector('.share-twitter').onclick = function() {
+                window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+            };
+            
+            document.querySelector('.share-whatsapp').onclick = function() {
+                window.open(`https://wa.me/?text=${text}%20${url}`, '_blank');
+            };
+            
+            document.querySelector('.share-instagram').onclick = function() {
+                showNotification('Silakan screenshot dan bagikan ke Instagram!');
+            };
+            
+            document.querySelector('.share-pinterest').onclick = function() {
+                window.open(`https://pinterest.com/pin/create/button/?url=${url}&description=${text}`, '_blank');
+            };
+            
+            document.querySelector('.share-linkedin').onclick = function() {
+                window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
+            };
+            
+            document.querySelector('.share-link').onclick = function() {
+                navigator.clipboard.writeText(`${window.location.href}`);
+                showNotification('Link telah disalin ke clipboard!');
+            };
+        }
+
+        // Fungsi untuk filter berdasarkan kategori
+        function filterByCategory(category) {
+            const allQuotes = [...quotes, ...userQuotes];
+            const filteredQuotes = allQuotes.filter(quote => quote.category === category);
+            const motivationCards = document.getElementById('motivationCards');
+            
+            // Kosongkan cards yang ada
+            motivationCards.innerHTML = '';
+            
+            // Tambahkan cards baru berdasarkan filter
+            filteredQuotes.forEach(quote => {
+                const card = createMotivationCard(quote);
+                motivationCards.appendChild(card);
+            });
+            
+            // Scroll ke bagian cards
+            document.getElementById('motivationCards').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Fungsi untuk membuat motivation card
+        function createMotivationCard(quote) {
+            const card = document.createElement('div');
+            card.className = 'motivation-card';
+            
+            // Tentukan gambar berdasarkan kategori
+            let imageUrl = '';
+            switch(quote.category) {
+                case 'kesuksesan':
+                    imageUrl = 'https://images.unsplash.com/photo-1516534775068-ba3e7458af70?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80';
+                    break;
+                case 'kehidupan':
+                    imageUrl = 'https://images.unsplash.com/photo-1506126613408-cca07d5b9170?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80';
+                    break;
+                case 'cinta':
+                    imageUrl = 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80';
+                    break;
+                case 'spiritual':
+                    imageUrl = 'https://images.unsplash.com/photo-1506126613408-cca07d5b9170?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80';
+                    break;
+                case 'persahabatan':
+                    imageUrl = 'https://images.unsplash.com/photo-1529158868331-599ce30d5fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80';
+                    break;
+                case 'keluarga':
+                    imageUrl = 'https://images.unsplash.com/photo-1529158868331-599ce30d5fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80';
+                    break;
+                case 'karir':
+                    imageUrl = 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80';
+                    break;
+                case 'kesehatan':
+                    imageUrl = 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80';
+                    break;
+            }
+            
+            card.innerHTML = `
+                <div class="card-image">
+                    <img src="${imageUrl}" alt="Motivasi ${quote.category}">
+                </div>
+                <div class="card-content">
+                    <div class="card-quote">"${quote.text}"</div>
+                    <div class="card-author">- ${quote.author}</div>
+                    <div class="card-category">${quote.category.charAt(0).toUpperCase() + quote.category.slice(1)}</div>
+                    <div class="card-source">${quote.source}</div>
+                    <div class="card-actions">
+                        <button class="card-action-btn like-btn" data-id="${quote.id || quote.text}">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="card-action-btn favorite-btn" data-id="${quote.id || quote.text}">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                        <button class="card-action-btn share-btn">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                        <button class="card-action-btn speak-btn">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                    <div class="rating" data-id="${quote.id || quote.text}">
+                        <span class="star" data-rating="1"><i class="far fa-star"></i></span>
+                        <span class="star" data-rating="2"><i class="far fa-star"></i></span>
+                        <span class="star" data-rating="3"><i class="far fa-star"></i></span>
+                        <span class="star" data-rating="4"><i class="far fa-star"></i></span>
+                        <span class="star" data-rating="5"><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="comments-section" id="comments-${quote.id || quote.text.replace(/\s+/g, '-')}">
+                        <!-- Comments will be added here -->
+                    </div>
+                </div>
+            `;
+            
+            // Event listener untuk like button
+            const likeBtn = card.querySelector('.like-btn');
+            likeBtn.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = 'var(--accent)';
+                    showNotification('Anda menyukai kata motivasi ini!');
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '';
+                }
+            });
+            
+            // Event listener untuk favorite button
+            const favoriteBtn = card.querySelector('.favorite-btn');
+            favoriteBtn.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = 'var(--accent)';
+                    
+                    // Tambah ke favorites
+                    if (!favoriteQuotes.find(fav => fav.id === quote.id || fav.text === quote.text)) {
+                        favoriteQuotes.push({
+                            id: quote.id || Date.now().toString(),
+                            text: quote.text,
+                            author: quote.author,
+                            category: quote.category,
+                            source: quote.source
+                        });
+                        localStorage.setItem('favoriteQuotes', JSON.stringify(favoriteQuotes));
+                        updateFavoritesDisplay();
+                        showNotification('Ditambahkan ke favorit!');
+                    }
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '';
+                    
+                    // Hapus dari favorites
+                    favoriteQuotes = favoriteQuotes.filter(fav => fav.id !== (quote.id || quote.text));
+                    localStorage.setItem('favoriteQuotes', JSON.stringify(favoriteQuotes));
+                    updateFavoritesDisplay();
+                    showNotification('Dihapus dari favorit!');
+                }
+            });
+            
+            // Event listener untuk share button
+            const shareBtn = card.querySelector('.share-btn');
+            shareBtn.addEventListener('click', function() {
+                updateShareButtons(quote);
+                showNotification('Link telah disalin ke clipboard!');
+            });
+            
+            // Event listener untuk speak button
+            const speakBtn = card.querySelector('.speak-btn');
+            speakBtn.addEventListener('click', function() {
+                speakText(quote.text);
+            });
+            
+            // Event listener untuk rating
+            const stars = card.querySelectorAll('.star');
+            stars.forEach(star => {
+                star.addEventListener('click', function() {
+                    const rating = parseInt(this.getAttribute('data-rating'));
+                    const quoteId = this.closest('.rating').getAttribute('data-id');
+                    
+                    // Update star display
+                    for (let i = 0; i < 5; i++) {
+                        if (i < rating) {
+                            stars[i].querySelector('i').classList.remove('far');
+                            stars[i].querySelector('i').classList.add('fas');
+                        } else {
+                            stars[i].querySelector('i').classList.remove('fas');
+                            stars[i].querySelector('i').classList.add('far');
+                        }
+                    }
+                    
+                    // Save rating to local storage
+                    let ratings = JSON.parse(localStorage.getItem('ratings')) || {};
+                    ratings[quoteId] = rating;
+                    localStorage.setItem('ratings', JSON.stringify(ratings));
+                    
+                    showNotification(`Anda memberi rating ${rating} bintang untuk kata motivasi ini!`);
+                });
+            });
+            
+            // Event listener untuk comment form
+            const commentForm = document.createElement('div');
+            commentForm.className = 'comment-form';
+            commentForm.innerHTML = `
+                <input type="text" class="comment-input" placeholder="Tambahkan komentar...">
+                <button class="comment-btn">Kirim</button>
+            `;
+            
+            const commentsSection = card.querySelector('.comments-section');
+            commentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const commentInput = this.querySelector('.comment-input');
+                const commentText = commentInput.value.trim();
+                
+                if (commentText) {
+                    // Create comment element
+                    const comment = document.createElement('div');
+                    comment.className = 'comment';
+                    comment.innerHTML = `
+                        <div class="comment-author">Anda</div>
+                        <div class="comment-text">${commentText}</div>
+                    `;
+                    
+                    // Add to comments section
+                    commentsSection.insertBefore(comment, commentsSection.firstChild);
+                    
+                    // Clear input
+                    commentInput.value = '';
+                    
+                    // Save to local storage
+                    let comments = JSON.parse(localStorage.getItem('comments')) || {};
+                    const quoteId = this.closest('.comments-section').id.replace('comments-', '');
+                    
+                    if (!comments[quoteId]) {
+                        comments[quoteId] = [];
+                    }
+                    
+                    comments[quoteId].push({
+                        author: 'Anda',
+                        text: commentText,
+                        date: new Date().toISOString()
+                    });
+                    
+                    localStorage.setItem('comments', JSON.stringify(comments));
+                }
+            });
+            
+            commentsSection.appendChild(commentForm);
+            
+            // Load existing comments
+            const quoteId = quote.id || quote.text.replace(/\s+/g, '-');
+            const comments = JSON.parse(localStorage.getItem('comments')) || {};
+            
+            if (comments[quoteId]) {
+                comments[quoteId].forEach(comment => {
+                    const commentEl = document.createElement('div');
+                    commentEl.className = 'comment';
+                    commentEl.innerHTML = `
+                        <div class="comment-author">${comment.author}</div>
+                        <div class="comment-text">${comment.text}</div>
+                    `;
+                    commentsSection.insertBefore(commentEl, commentsSection.firstChild);
+                });
+            }
+            
+            return card;
+        }
+
+        // Fungsi untuk update display favorites
+        function updateFavoritesDisplay() {
+            const favoritesGrid = document.getElementById('favoritesGrid');
+            
+            if (favoriteQuotes.length === 0) {
+                favoritesGrid.innerHTML = '<p style="text-align: center; width: 100%;">Belum ada kata motivasi favorit. Klik ikon bookmark pada kata motivasi untuk menambahkan ke sini.</p>';
+                return;
+            }
+            
+            favoritesGrid.innerHTML = '';
+            
+            favoriteQuotes.forEach(quote => {
+                const card = document.createElement('div');
+                card.className = 'favorite-card';
+                
+                card.innerHTML = `
+                    <div class="card-quote">"${quote.text}"</div>
+                    <div class="card-author">- ${quote.author}</div>
+                    <div class="card-category">${quote.category.charAt(0).toUpperCase() + quote.category.slice(1)}</div>
+                    <div class="card-source">${quote.source}</div>
+                    <button class="favorite-remove" data-id="${quote.id}">
+                        <i class="fas fa-times"></i>
+                    </button>
+                `;
+                
+                // Event listener untuk remove button
+                const removeBtn = card.querySelector('.favorite-remove');
+                removeBtn.addEventListener('click', function() {
+                    favoriteQuotes = favoriteQuotes.filter(fav => fav.id !== quote.id);
+                    localStorage.setItem('favoriteQuotes', JSON.stringify(favoriteQuotes));
+                    updateFavoritesDisplay();
+                    showNotification('Dihapus dari favorit!');
+                });
+                
+                favoritesGrid.appendChild(card);
+            });
+        }
+
+        // Fungsi untuk menampilkan notifikasi
+        function showNotification(message, type = 'success') {
+            const notification = document.getElementById('notification');
+            const notificationMessage = document.getElementById('notificationMessage');
+            
+            // Set pesan
+            notificationMessage.textContent = message;
+            
+            // Set warna berdasarkan tipe
+            if (type === 'success') {
+                notification.style.backgroundColor = 'var(--success)';
+            } else if (type === 'error') {
+                notification.style.backgroundColor = 'var(--accent)';
+            }
+            
+            // Tampilkan notifikasi
+            notification.classList.add('show');
+            
+            // Sembunyikan setelah 5 detik
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 5000);
+        }
+
+        // Fungsi untuk mencari quote
+        function searchQuotes() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const activeFilter = document.querySelector('.filter-tag.active').getAttribute('data-filter');
+            
+            if (searchTerm === '' && activeFilter === 'all') {
+                // Jika search kosong dan filter all, tampilkan semua quotes
+                displayAllQuotes();
+                return;
+            }
+            
+            const allQuotes = [...quotes, ...userQuotes];
+            let filteredQuotes = allQuotes;
+            
+            // Filter berdasarkan kategori jika bukan 'all'
+            if (activeFilter !== 'all') {
+                filteredQuotes = filteredQuotes.filter(quote => quote.category === activeFilter);
+            }
+            
+            // Filter berdasarkan search term
+            if (searchTerm !== '') {
+                filteredQuotes = filteredQuotes.filter(quote => 
+                    quote.text.toLowerCase().includes(searchTerm) || 
+                    quote.author.toLowerCase().includes(searchTerm)
+                );
+            }
+            
+            const motivationCards = document.getElementById('motivationCards');
+            
+            // Kosongkan cards yang ada
+            motivationCards.innerHTML = '';
+            
+            if (filteredQuotes.length === 0) {
+                motivationCards.innerHTML = '<p style="text-align: center; width: 100%;">Tidak ditemukan kata motivasi yang sesuai dengan pencarian Anda.</p>';
+                return;
+            }
+            
+            // Tambahkan cards baru berdasarkan hasil pencarian
+            filteredQuotes.forEach(quote => {
+                const card = createMotivationCard(quote);
+                motivationCards.appendChild(card);
+            });
+            
+            // Scroll ke bagian cards
+            document.getElementById('motivationCards').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Fungsi untuk menampilkan semua quotes
+        function displayAllQuotes() {
+            const allQuotes = [...quotes, ...userQuotes];
+            const motivationCards = document.getElementById('motivationCards');
+            
+            // Kosongkan cards yang ada
+            motivationCards.innerHTML = '';
+            
+            // Tambahkan cards baru
+            allQuotes.forEach(quote => {
+                const card = createMotivationCard(quote);
+                motivationCards.appendChild(card);
+            });
+        }
+
+        // Fungsi untuk text-to-speech
+        function speakText(text) {
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'id-ID';
+                utterance.rate = 0.9;
+                utterance.pitch = 1;
+                
+                speechSynthesis.speak(utterance);
+            } else {
+                showNotification('Browser Anda tidak mendukung fitur text-to-speech.');
+            }
+        }
+
+        // Fungsi untuk generate calendar
+        function generateCalendar(year, month) {
+            const calendarGrid = document.getElementById('calendarGrid');
+            calendarGrid.innerHTML = '';
+            
+            // Add day headers
+            const dayHeaders = ['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab'];
+            dayHeaders.forEach(day => {
+                const dayHeader = document.createElement('div');
+                dayHeader.className = 'calendar-day-header';
+                dayHeader.textContent = day;
+                calendarGrid.appendChild(dayHeader);
+            });
+            
+            // Get first day of month and number of days
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = new Date(year, month + 1, 0).getDate();
+            
+            // Add empty cells for days before the first day of the month
+            for (let i = 0; i < firstDay; i++) {
+                const emptyDay = document.createElement('div');
+                emptyDay.className = 'calendar-day';
+                calendarGrid.appendChild(emptyDay);
+            }
+            
+            // Add days of the month
+            const today = new Date();
+            for (let day = 1; day <= daysInMonth; day++) {
+                const dayElement = document.createElement('div');
+                dayElement.className = 'calendar-day';
+                dayElement.textContent = day;
+                
+                // Check if this day is today
+                if (year === today.getFullYear() && month === today.getMonth() && day === today.getDate()) {
+                    dayElement.classList.add('today');
+                }
+                
+                // Add random motivation indicator
+                if (Math.random() > 0.7) {
+                    dayElement.classList.add('has-motivation');
+                    dayElement.title = 'Ada motivasi untuk hari ini';
+                }
+                
+                calendarGrid.appendChild(dayElement);
+            }
+        }
+
+        // Fungsi untuk generate quote berdasarkan filter
+        function generateQuote() {
+            const category = document.getElementById('generatorCategory').value;
+            const emotion = document.getElementById('generatorEmotion').value;
+            const situation = document.getElementById('generatorSituation').value;
+            
+            // Filter quotes based on selections
+            let filteredQuotes = [...quotes, ...userQuotes];
+            
+            if (category) {
+                filteredQuotes = filteredQuotes.filter(quote => quote.category === category);
+            }
+            
+            if (filteredQuotes.length === 0) {
+                document.getElementById('generatorResult').innerHTML = '<div class="generator-quote">Tidak ditemukan kata motivasi yang sesuai dengan filter Anda.</div>';
+                return;
+            }
+            
+            // Get random quote from filtered results
+            const randomIndex = Math.floor(Math.random() * filteredQuotes.length);
+            const quote = filteredQuotes[randomIndex];
+            
+            // Display result
+            document.getElementById('generatorResult').innerHTML = `
+                <div class="generator-quote">"${quote.text}"</div>
+                <div class="generator-author">- ${quote.author}</div>
+                <div class="tts-controls">
+                    <button class="tts-btn" id="speakGenerated">
+                        <i class="fas fa-volume-up"></i> Dengarkan
+                    </button>
+                    <button class="tts-btn" id="copyGenerated">
+                        <i class="fas fa-copy"></i> Salin
+                    </button>
+                </div>
+            `;
+            
+            // Add event listeners
+            document.getElementById('speakGenerated').onclick = function() {
+                speakText(quote.text);
+            };
+            
+            document.getElementById('copyGenerated').onclick = function() {
+                navigator.clipboard.writeText(`"${quote.text}" - ${quote.author}`);
+                showNotification('Teks telah disalin ke clipboard!');
+            };
+        }
+
+        // Event Listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize calendar
+            const today = new Date();
+            const currentMonth = today.getMonth();
+            const currentYear = today.getFullYear();
+            
+            // Set calendar month text
+            const monthNames = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+            document.getElementById('calendarMonth').textContent = `${monthNames[currentMonth]} ${currentYear}`;
+            
+            // Generate calendar
+            generateCalendar(currentYear, currentMonth);
+            
+            // Calendar navigation
+            document.getElementById('prevMonth').addEventListener('click', function() {
+                const newMonth = currentMonth === 0 ? 11 : currentMonth - 1;
+                const newYear = currentMonth === 0 ? currentYear - 1 : currentYear;
+                document.getElementById('calendarMonth').textContent = `${monthNames[newMonth]} ${newYear}`;
+                generateCalendar(newYear, newMonth);
+            });
+            
+            document.getElementById('nextMonth').addEventListener('click', function() {
+                const newMonth = currentMonth === 11 ? 0 : currentMonth + 1;
+                const newYear = currentMonth === 11 ? currentYear + 1 : currentYear;
+                document.getElementById('calendarMonth').textContent = `${monthNames[newMonth]} ${newYear}`;
+                generateCalendar(newYear, newMonth);
+            });
+            
+            // Tampilkan semua quotes saat halaman dimuat
+            displayAllQuotes();
+            
+            // Update favorites display
+            updateFavoritesDisplay();
+            
+            // Event listener untuk tombol quote baru
+            document.getElementById('newQuoteBtn').addEventListener('click', function() {
+                const btnText = document.getElementById('newQuoteBtnText');
+                btnText.innerHTML = '<span class="spinner"></span> Memuat...';
+                
+                setTimeout(() => {
+                    getRandomQuote();
+                    btnText.textContent = 'Motivasi Lainnya';
+                }, 500);
+            });
+            
+            // Event listener untuk tombol cari
+            document.getElementById('searchBtn').addEventListener('click', searchQuotes);
+            
+            // Event listener untuk input cari (ketika menekan Enter)
+            document.getElementById('searchInput').addEventListener('keyup', function(event) {
+                if (event.key === 'Enter') {
+                    searchQuotes();
+                }
+            });
+            
+            // Event listener untuk filter tags
+            document.querySelectorAll('.filter-tag').forEach(tag => {
+                tag.addEventListener('click', function() {
+                    // Remove active class from all tags
+                    document.querySelectorAll('.filter-tag').forEach(t => {
+                        t.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked tag
+                    this.classList.add('active');
+                    
+                    // Trigger search
+                    searchQuotes();
+                });
+            });
+            
+            // Event listener untuk category cards
+            document.querySelectorAll('.category-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    filterByCategory(category);
+                });
+            });
+            
+            // Event listener untuk create tabs
+            document.querySelectorAll('.create-tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Remove active class from all tabs
+                    document.querySelectorAll('.create-tab').forEach(t => {
+                        t.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                    
+                    // Show/hide tab content
+                    const tabId = this.getAttribute('data-tab');
+                    document.querySelectorAll('.create-tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    document.getElementById(`${tabId}-tab`).classList.add('active');
+                });
+            });
+            
+            // Event listener untuk user create form
+            document.getElementById('userCreateForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Ambil data form
+                const quoteText = document.getElementById('userQuoteText').value;
+                const userName = document.getElementById('userName').value;
+                const category = document.getElementById('userCategory').value;
+                
+                // Buat ID unik untuk quote
+                const id = Date.now().toString();
+                
+                // Tambahkan ke database quotes
+                const newQuote = {
+                    id: id,
+                    text: quoteText,
+                    author: userName,
+                    category: category,
+                    source: 'Pengguna'
+                };
+                
+                userQuotes.push(newQuote);
+                
+                // Simpan ke local storage
+                localStorage.setItem('userQuotes', JSON.stringify(userQuotes));
+                
+                // Tampilkan notifikasi
+                showNotification(`Terima kasih ${userName}! Kata motivasi Anda telah ditambahkan ke KATAMANGKI.COM dan akan menginspirasi banyak orang.`);
+                
+                // Reset form
+                this.reset();
+                
+                // Refresh tampilan cards
+                displayAllQuotes();
+            });
+            
+            // Event listener untuk AI generate button
+            document.getElementById('generateAiBtn').addEventListener('click', function() {
+                const aiResult = document.getElementById('aiResult');
+                const aiActions = document.getElementById('aiActions');
+                
+                // Show loading
+                aiResult.innerHTML = '<div class="loading"><span class="spinner"></span> Sedang generate kata motivasi...</div>';
+                aiActions.style.display = 'none';
+                
+                // Get selected tags
+                const selectedTags = [];
+                document.querySelectorAll('.ai-tag.active').forEach(tag => {
+                    selectedTags.push(tag.getAttribute('data-ai-tag'));
+                });
+                
+                // Simulate AI generation (in real implementation, this would call an AI API)
+                setTimeout(() => {
+                    // AI generated quotes based on selected tags
+                    const aiQuotes = [
+                        {
+                            text: "Setiap pagi adalah kesempatan baru untuk menulis cerita hidup Anda sendiri. Pilihlah untuk menulis dengan tinta harapan, bukan penyesalan.",
+                            author: "AI Generator",
+                            category: selectedTags.includes('kehidupan') ? 'kehidupan' : 'kesuksesan'
+                        },
+                        {
+                            text: "Kekuatan sejati tidak datang dari kemampuan fisik, tetapi dari kemauan yang tak terkalahkan untuk terus maju.",
+                            author: "AI Generator",
+                            category: selectedTags.includes('semangat') ? 'kehidupan' : 'kesuksesan'
+                        },
+                        {
+                            text: "Cinta sejati bukan ditemukan, tetapi dibangun dengan tindakan setiap hari dan komitmen yang tak tergoyahkan.",
+                            author: "AI Generator",
+                            category: selectedTags.includes('cinta') ? 'cinta' : 'kehidupan'
+                        },
+                        {
+                            text: "Ketenangan batin bukanlah ketiadaan masalah, tetapi kemampuan untuk menghadapi masalah dengan ketenangan yang teguh.",
+                            author: "AI Generator",
+                            category: selectedTags.includes('spiritual') ? 'spiritual' : 'kehidupan'
+                        }
+                    ];
+                    
+                    // Select random quote
+                    const randomIndex = Math.floor(Math.random() * aiQuotes.length);
+                    const quote = aiQuotes[randomIndex];
+                    
+                    // Display result
+                    aiResult.innerHTML = `
+                        <div class="ai-result-text">"${quote.text}"</div>
+                        <div class="generator-author">- ${quote.author}</div>
+                    `;
+                    
+                    // Show actions
+                    aiActions.style.display = 'flex';
+                    
+                    // Add event listeners for action buttons
+                    document.getElementById('saveAiQuote').onclick = function() {
+                        // Add to user quotes
+                        const newQuote = {
+                            id: Date.now().toString(),
+                            text: quote.text,
+                            author: quote.author,
+                            category: quote.category,
+                            source: 'AI Generator'
+                        };
+                        
+                        userQuotes.push(newQuote);
+                        localStorage.setItem('userQuotes', JSON.stringify(userQuotes));
+                        
+                        showNotification('Kata motivasi AI telah disimpan!');
+                        displayAllQuotes();
+                    };
+                    
+                    document.getElementById('regenerateAiBtn').onclick = function() {
+                        document.getElementById('generateAiBtn').click();
+                    };
+                }, 1500);
+            });
+            
+            // Event listener untuk AI tags
+            document.querySelectorAll('.ai-tag').forEach(tag => {
+                tag.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+            
+            // Event listener untuk contribution form
+            document.getElementById('contributionForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Ambil data form
+                const contributorName = document.getElementById('contributorName').value;
+                const quoteText = document.getElementById('quoteText').value;
+                const quoteAuthor = document.getElementById('quoteAuthor').value || 'Anonim';
+                const quoteCategory = document.getElementById('quoteCategory').value;
+                
+                // Buat ID unik untuk quote
+                const id = Date.now().toString();
+                
+                // Tambahkan ke database quotes
+                const newQuote = {
+                    id: id,
+                    text: quoteText,
+                    author: quoteAuthor,
+                    category: quoteCategory,
+                    source: 'Kontributor'
+                };
+                
+                userQuotes.push(newQuote);
+                
+                // Simpan ke local storage
+                localStorage.setItem('userQuotes', JSON.stringify(userQuotes));
+                
+                // Tampilkan notifikasi
+                showNotification(`Terima kasih ${contributorName}! Kontribusi Anda telah ditambahkan ke KATAMANGKI.COM dan akan menginspirasi banyak orang.`);
+                
+                // Reset form
+                this.reset();
+                
+                // Refresh tampilan cards
+                displayAllQuotes();
+            });
+            
+            // Event listener untuk generator button
+            document.getElementById('generateBtn').addEventListener('click', generateQuote);
+            
+            // Event listener untuk theme toggle
+            document.getElementById('themeToggle').addEventListener('click', function() {
+                if (document.documentElement.getAttribute('data-theme') === 'dark') {
+                    document.documentElement.removeAttribute('data-theme');
+                    this.innerHTML = '<i class="fas fa-moon"></i>';
+                    settings.theme = 'light';
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    this.innerHTML = '<i class="fas fa-sun"></i>';
+                    settings.theme = 'dark';
+                }
+                localStorage.setItem('settings', JSON.stringify(settings));
+            });
+            
+            // Event listener untuk font controls
+            document.getElementById('fontDecrease').addEventListener('click', function() {
+                const currentSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+                document.documentElement.style.fontSize = `${currentSize - 2}px`;
+                settings.fontSize = 'small';
+                localStorage.setItem('settings', JSON.stringify(settings));
+            });
+            
+            document.getElementById('fontNormal').addEventListener('click', function() {
+                document.documentElement.style.fontSize = '16px';
+                settings.fontSize = 'medium';
+                localStorage.setItem('settings', JSON.stringify(settings));
+            });
+            
+            document.getElementById('fontIncrease').addEventListener('click', function() {
+                const currentSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+                document.documentElement.style.fontSize = `${currentSize + 2}px`;
+                settings.fontSize = 'large';
+                localStorage.setItem('settings', JSON.stringify(settings));
+            });
+            
+            // Event listener untuk user profile
+            document.getElementById('userProfile').addEventListener('click', function() {
+                document.getElementById('userModal').style.display = 'block';
+            });
+            
+            document.getElementById('userModalClose').addEventListener('click', function() {
+                document.getElementById('userModal').style.display = 'none';
+            });
+            
+            // Event listener untuk user form
+            document.getElementById('userForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Ambil data form
+                const userName = document.getElementById('userName').value;
+                const userEmail = document.getElementById('userEmail').value;
+                const userBio = document.getElementById('userBio').value;
+                
+                // Update user data
+                userData = {
+                    name: userName,
+                    email: userEmail,
+                    bio: userBio
+                };
+                
+                // Simpan ke local storage
+                localStorage.setItem('userData', JSON.stringify(userData));
+                
+                // Update UI
+                document.querySelector('.user-name').textContent = userName;
+                document.querySelector('.user-avatar').textContent = userName.charAt(0).toUpperCase();
+                
+                // Tampilkan notifikasi
+                showNotification('Profil berhasil diperbarui!');
+                
+                // Close modal
+                document.getElementById('userModal').style.display = 'none';
+            });
+            
+            // Event listener untuk welcome message close
+            document.getElementById('welcomeClose').addEventListener('click', function() {
+                document.getElementById('welcomeMessage').style.display = 'none';
+            });
+            
+            // Event listener untuk quote action buttons
+            document.getElementById('likeQuote').addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = 'var(--accent)';
+                    showNotification('Anda menyukai kata motivasi ini!');
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '';
+                }
+            });
+            
+            document.getElementById('favoriteQuote').addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                const quoteText = document.getElementById('dailyQuote').textContent.replace(/"/g, '');
+                const quoteAuthor = document.getElementById('dailyAuthor').textContent.replace('- ', '');
+                const quoteCategory = document.getElementById('dailyCategory').textContent.toLowerCase();
+                const quoteSource = document.getElementById('dailySource').textContent;
+                
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = 'var(--accent)';
+                    
+                    // Tambah ke favorites
+                    if (!favoriteQuotes.find(fav => fav.text === quoteText)) {
+                        favoriteQuotes.push({
+                            id: Date.now().toString(),
+                            text: quoteText,
+                            author: quoteAuthor,
+                            category: quoteCategory,
+                            source: quoteSource
+                        });
+                        localStorage.setItem('favoriteQuotes', JSON.stringify(favoriteQuotes));
+                        updateFavoritesDisplay();
+                        showNotification('Ditambahkan ke favorit!');
+                    }
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '';
+                    
+                    // Hapus dari favorites
+                    favoriteQuotes = favoriteQuotes.filter(fav => fav.text !== quoteText);
+                    localStorage.setItem('favoriteQuotes', JSON.stringify(favoriteQuotes));
+                    updateFavoritesDisplay();
+                    showNotification('Dihapus dari favorit!');
+                }
+            });
+            
+            document.getElementById('speakQuote').addEventListener('click', function() {
+                const quoteText = document.getElementById('dailyQuote').textContent.replace(/"/g, '');
+                speakText(quoteText);
+            });
+            
+            // Event listener untuk motivation widget
+            document.getElementById('widgetToggle').addEventListener('click', function() {
+                const widget = document.getElementById('motivationWidget');
+                widget.classList.toggle('show');
+            });
+            
+            // Event listener untuk daily notification
+            document.getElementById('dailyNotificationClose').addEventListener('click', function() {
+                document.getElementById('dailyNotification').classList.remove('show');
+            });
+            
+            // Show daily notification after page load
+            setTimeout(() => {
+                document.getElementById('dailyNotification').classList.add('show');
+                
+                // Auto hide after 10 seconds
+                setTimeout(() => {
+                    document.getElementById('dailyNotification').classList.remove('show');
+                }, 10000);
+            }, 3000);
+            
+            // Event listener untuk notification close
+            document.getElementById('notificationClose').addEventListener('click', function() {
+                document.getElementById('notification').classList.remove('show');
+            });
+            
+            // Event listener untuk back to top button
+            const backToTop = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
+            });
+            
+            backToTop.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Event listener untuk mobile menu button
+            document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+                // Toggle mobile menu
+                const nav = document.querySelector('nav');
+                if (nav.style.display === 'block') {
+                    nav.style.display = '';
+                } else {
+                    nav.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
